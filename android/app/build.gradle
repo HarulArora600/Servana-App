@@ -80,6 +80,11 @@ android {
     namespace "com.awesomeproject"
     defaultConfig {
         applicationId "com.awesomeproject"
+       manifestPlaceholders = [
+    auth0Domain : "dev-slu50ihfshr18auh.us.auth0.com",
+    auth0Scheme : "${applicationId}.auth0",
+    razorpayKey : "rzp_test_KtGqV1mcH2eOwQ"
+]
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
